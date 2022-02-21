@@ -1,0 +1,649 @@
+@import "null.css";
+
+/* Шрифты */
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+body {
+	font-family: 'Russo One', sans-serif;
+	font-size: 25px;
+	background: url('../img/100522-otrazhenie-ozero-priroda-dostoprimechatelnost-utro-3840x2160.jpg') 0 0/cover no-repeat fixed;
+}
+/* шапка */
+.header {
+	background: url('../img/header.jpg') 0 0/cover no-repeat;
+	margin: 0px 0px 30px 0px;
+}
+.header:hover {
+	background: linear-gradient(338deg, rgb(252, 252, 252) 0%, rgba(231, 223, 223, 0.5) 0%, rgba(66, 75, 4, 0.521) 26%, rgba(50, 112, 103, 0.473) 57%, rgba(187, 179, 179, 0.87) 100%, rgba(8, 115, 13, 0.753) 100%, rgba(3, 57, 6, 0.644) 100%),url('../img/header.jpg') 0 0/cover no-repeat;
+}
+h1 {
+	font-size: 38px;
+	color: rgb(223, 31, 31);
+	text-shadow: 1px 1px 2px #000;
+	text-align: center;
+	margin: 0px 0px 20px 0px;
+}
+h2 {
+	font-family: 'Rubik Mono One', sans-serif;
+	font-size: 30px;
+	color: rgb(0, 174, 255);
+	text-shadow: 1px 1px 1px #000;
+	margin: 0px 0px 6px 20px;
+}
+h2::after {
+	content: "";
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	background: url('../img/h2.png') 4px 2.3px/60px no-repeat;
+}
+h3 {
+	color: rgb(204, 2, 255);
+	font-size: 26px;
+	text-shadow: 2px 2px 1px #000;
+	letter-spacing: 1px;
+	margin: 0px 0px 12px 10px;
+	padding: 0px 0px 0px 40px;
+}
+h3::before {
+	content: "";
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	margin: 0px 0px -10px -40px;
+	background: url('../img/star.png') 0 0/40px no-repeat;
+}	
+.logo {
+	max-width: 100px;
+	margin: 0 auto;
+}
+.logo-img {
+	max-width: 100px;
+	margin: 0 auto;
+}
+.menu {
+	text-shadow: 1px 1px 1px #000;
+	margin: 0px 0px 0px 70px;
+}
+
+.menu a{
+	display: inline-block;
+	padding: 0px 0px 0px 30px;
+	color: rgb(224, 149, 9);
+	line-height: 1.2;
+}
+.menu a:hover {
+	color: rgb(247, 222, 83);
+	text-shadow: 1px 1px 2px #000;
+} 
+.menu a:hover::before{
+	content: "";
+	width: 20px;
+	height: 20px;
+	margin: 0px 10px 0px -30px;
+	display: inline-block;
+	background: url('../img/psevdo_kmen.png') 0 2px/20px no-repeat;
+}
+.menu a:active::before {
+	content: "";
+	width: 20px;
+	height: 20px;
+	margin: 0px 10px 0px -30px;
+	display: inline-block;
+	background: url('../img/psevdo_kmen2.png') 0 2px/20px no-repeat;
+}
+
+.background {
+	background: linear-gradient(338deg, rgba(27, 25, 25, 0.918) 25%, rgba(55, 58, 8, 0.767) 54%, rgba(78, 26, 26, 0.788) 87%);
+	max-width: 1400px;
+	margin: 0 auto;
+}
+/* вступление */
+.introduction {
+	font-family: 'Marck Script', cursive;
+	margin: 0px 0px 40px 0px;
+}
+.introduction p {
+	color: rgb(151, 209, 14);
+	text-decoration: underline;
+	line-height: 1.1;
+	letter-spacing: 2px;
+	padding: 5px;
+}
+.introduction p:hover {
+	font-family: sans-serif;
+	background-color: rgba(0, 0, 0, 0.158);
+	text-shadow: 1px 1px 2px rgb(255, 8, 0);
+}
+/* Что такое вулкан и его извержение */
+.what {
+	margin: 0px 0px 40px 0px;
+}
+.what p:nth-of-type(1) {
+	color: rgb(29, 230, 2);
+	padding: 3px 14px;
+	margin: 0px 40px 20px 13px;
+	background-color: rgba(0, 255, 255, 0.329);
+	border-radius: 5px;
+}
+.img-what {
+	width: 660px;
+	height: 371px;
+	margin: 0 auto 10px;
+}
+.img-what:hover::after {
+	content: "";
+	display:block;
+	width: 60px;
+	height: 60px;
+	background: url('../img/click.png') 0 0/60px no-repeat ; 
+	margin: -25px 0px 0px -24px;
+}
+.img-what img {
+	width: 90%;
+	height: 90%;
+	border-radius: 20px 60px;
+	text-align: center;
+}
+.img-what img:hover {
+	width: 95%;
+	height: 95%;
+	cursor: pointer;
+	border: 2px dashed rgb(0, 171, 238);
+}
+.img-what:active::after{
+	content: "";
+	background: none;
+}
+.img-what img:active {
+	width: 100%;
+	height: 100%;
+	border: none;
+	box-shadow: 4px 4px 10px rgb(0, 171, 238),-4px -4px 10px rgb(0, 171, 238);
+}
+
+.what ol {
+	font-family: 'Marck Script', cursive;
+	margin: 0px 220px 20px 80px;
+}
+.what-structure {
+	color: rgb(0, 140, 255);
+	padding: 0px 0px 0px 30px;
+	line-height: 1.1;
+}
+.what-structure:not(:last-child) {
+	margin-bottom: 20px;
+}
+.what-structure:hover:nth-child(even) {
+	background-color: rgba(255, 0, 0, 0.11);
+}
+.what-structure:hover:nth-child(odd) {
+	background-color: rgba(6, 128, 243, 0.11);
+}
+.what-structure:nth-child(odd){
+	color: rgb(255, 6, 6);
+	font-style: italic;
+}
+.what-structure:nth-child(1)::before {
+	content: '1.';
+	display: inline-block;
+	margin: 0px 10px 0px -30px;
+	font-family: sans-serif;
+	color: rgb(0, 140, 255);
+	font-style: normal;
+}
+.what-structure:nth-child(1):hover:before {
+	content: '1.';
+	color: rgb(6, 218, 16);
+}
+.what-structure:nth-child(2)::before {
+	content: '2.';
+	display: inline-block;
+	margin: 0px 10px 0px -30px;
+	font-family: sans-serif;
+	color: rgb(255, 6, 6);
+	font-style: normal;
+}
+.what-structure:nth-child(2):hover:before {
+	content: '2.';
+	color: rgb(6, 218, 16);
+}
+.what-structure:nth-child(3)::before {
+	content: '3.';
+	display: inline-block;
+	margin: 0px 10px 0px -30px;
+	font-family: sans-serif;
+	color: rgb(0, 140, 255);
+	font-style: normal;
+}
+.what-structure:nth-child(3):hover:before {
+	content: '3.';
+	color: rgb(6, 218, 16);
+}
+
+.img-structure {
+	max-width: 660px;
+	margin: 0 auto 20px;
+}
+.img-structure img{
+	border-radius: 50%;
+}
+.img-structure img:hover {
+	box-shadow: 10px 10px 4px rgb(238, 49, 255);
+}
+.main ul {
+	color: rgb(2, 171, 177);
+	line-height: 1.2;
+	margin: 0px 0px 30px 70px;
+}
+.what-ul {
+	padding: 0px 0px 0px 40px;
+}
+.what-ul:not(:last-child) {
+	margin-bottom: 15px;
+}
+.what-ul::before {
+	content: "";
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url('../img/kryg.png') 0 4px/20px no-repeat;
+	margin: 0px 20px 0px -40px;
+}
+.what-ul:hover::before {
+	content: "";
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url('../img/galka.png') 0 0/20px no-repeat;
+	margin: 0px 20px -4px -40px;
+}
+.what-ul a {
+	color: rgb(173, 15, 15);
+	font-weight: bold;
+}
+.what-ul a:hover {
+	color: rgb(173, 15, 15);
+	text-decoration: underline;
+}
+.what-ul a:active {
+	color: rgb(230, 112, 112);
+}
+.what-ul a:visited {
+	color: rgb(245, 165, 238);
+}
+.what-form {
+	color: rgb(228, 22, 22);
+	line-height: 1.2;
+	counter-reset: item;
+}
+.what-form > *:last-child {
+	margin-bottom: 0;
+}
+.what-form li {
+	margin: 0px 0px 14px 0px;
+	padding: 0px 0px 0px 50px;
+}
+.what-form li::before {
+	counter-increment: item;
+	content: "(" counter(item) ")";
+	margin: 0px 10px 0px -40px;
+	color: rgb(94, 255, 0);
+	text-shadow: none;
+}
+.what-form li:hover::before {
+	counter-increment: item;
+	content: "(" counter(item) ")";
+	margin: 0px 10px 0px -40px;
+	color: rgb(0, 255, 221);
+}
+.what-form li:hover:nth-child(odd){
+	color: rgb(13, 26, 201);
+	background:url('../img/star.png') right 0/20px repeat-y;
+	border-radius: 10px;
+}
+.what-form li:hover:nth-child(even){
+	color: rgb(201, 182, 13);
+	background-color: rgba(16, 107, 119, 0.356);
+	border-radius: 10px;
+	box-shadow: 4px 4px 3px rgba(255, 255, 255, 0.295);
+	text-shadow: 2px 2px 1px rgba(255, 255, 255, 0.295);
+}
+.what-form-form span{
+	display: inline-block;
+	color: rgb(255, 0, 212);
+	text-shadow: none;
+}
+.what-form li span::first-letter{
+	text-shadow: 1px 1px 4px rgb(248, 211, 0);
+	color: rgb(7, 160, 206);
+}
+.what-form li span:hover::first-letter{
+	color: rgb(255, 0, 212);
+}
+.what-form li span:hover {
+	color:rgb(7, 160, 206);
+}
+
+
+.scroll-p {
+	color: rgb(253, 215, 0);
+	text-shadow: 2px 2px 1px #000;
+	max-width: 700px;
+	max-height: 110px;
+	overflow: auto;
+	margin: 0px 0px 30px 60px;
+	padding: 0px 5px;
+	background: url('../img/100522-otrazhenie-ozero-priroda-dostoprimechatelnost-utro-3840x2160.jpg') 0 0/cover no-repeat;
+}
+
+.scroll-p::first-line {
+	color: rgb(230, 208, 6);
+	font-size: 55px;
+}
+.scroll-p::first-letter {
+	color: rgb(174, 0, 255);
+	text-shadow: 3px 3px 1px #000;
+}
+.img-hawaii {
+	max-width: 660px;
+	margin: 0 auto 40px;
+	text-align: center;
+}
+.img-hawaii:hover {
+	box-shadow: 0 0 40px rgb(255, 255, 255);
+	border-radius: 30px 30px 0 0 ;
+}
+.img-hawaii img:hover {
+	border-radius: 30px 30px 0 0 ;
+}
+.quotes {
+	margin: 0px 0px 30px 30px;
+	color: rgb(165, 3, 3);
+}
+.quotes:hover::first-line {
+	color: rgb(51, 255, 0);
+	font-size: 30px;
+	line-height: 2;
+}
+.quotes:hover::first-letter {
+	color: rgb(0, 238, 255);
+	font-size: 60px;
+	text-shadow: 2px 2px 3px rgb(255, 0, 0);
+	padding: 0px 0px 0px 70px;
+}
+
+/* Типы извержения вулканов */
+.types {
+	margin: 0px 20px 40px;
+}
+.types > *:last-child {
+	margin-bottom: 0;
+}
+.types-text {
+	font-size: 50px;
+	color: rgb(211, 226, 2);
+	letter-spacing: 5px;
+	text-decoration: line-through;
+	border-left:3px dashed rgb(12, 211, 46);
+	border-bottom:13px dotted rgb(141, 93, 255);
+	opacity: 0.5;
+	padding: 0px 0px 8px 10px;
+	margin: 0px 0px 20px 0px;
+}
+.types-text:hover {
+	border-left:3px dashed rgb(255, 36, 189);
+	border-bottom:13px dotted rgb(30, 245, 234);
+}
+.types-text:hover::first-line {
+	color: rgb(248, 0, 0);
+	font-size: 55px;
+}
+.types-ul {
+	color: rgb(233, 165, 247);
+	padding: 0px 0px 0px 80px;
+}
+.types-ul:nth-child(3n) {
+	color: rgb(196, 24, 24);
+	padding: 0px 0px 0px 30px;
+}
+.types-ul:hover {
+	color: rgb(19, 2, 247);
+}
+.types-ul:hover:nth-child(3n){
+	color: rgb(162, 211, 27);
+}
+.types-ul :not(:last-child) {
+	font-size: 37px;
+	margin: 0px 0px 50px 0px;
+}
+.types-ul::before {
+	content: "";
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background: url('../img/star.png') 0 4px/30px no-repeat;
+	margin: 0px 5px 0px -35px;
+}
+.types-ul:hover::before {
+	content: "";
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background: url('../img/logo.png') 0 4px/30px no-repeat;
+	margin: 0px 5px 0px -35px;
+}
+.img-types-li {
+	max-width: 660px;
+	margin: 0 auto 30px;
+}
+
+.img-types-li img:hover{
+	box-shadow: 0 0 20px rgb(240, 0, 0), 10px 10px 20px rgb(0, 24, 240);
+}
+.quotes-block {
+	color: rgb(202, 236, 8);
+	line-height: 1.2;
+	margin: 0px 0px 90px 0px;
+}
+.quotes-block p:not(:last-child) {
+	margin: 0px 0px 40px 0px;
+}
+.quotes-block p:hover {
+	color: rgb(250, 160, 160);
+	background-color: rgba(0, 255, 242, 0.226);
+	border-radius: 12px;
+}
+.quotes-block p:hover::first-letter {
+	color: rgb(255, 230, 0);
+}
+.quotes-block p:hover::after {
+	content: "";
+	display: inline-block;
+	width: 180px;
+	height: 20px;
+	background: url('../img/star.png') 0 2px/20px repeat-x;
+}
+.quotes-block p:hover +p {
+	background-color: rgba(0, 255, 242, 0.068);
+	color: rgb(231, 21, 21);
+	border-radius: 12px;
+}
+
+.types-quotes:nth-child(even) {
+	color: rgb(138, 136, 255);
+}
+.types-exposive {
+	margin: 0px 0px 60px 0px;
+}
+.types-exposive li:not(:last-child){
+	margin: 0px 0px 20px 0px;
+}
+.types-ol {
+	color: aqua;
+	line-height: 1.5;
+	padding: 0px 0px 0px 90px;
+}
+.types-ol:nth-child(3),
+.types-ol:nth-child(4) {
+	padding: 0px 0px 0px 190px;
+}
+.types-ol::before {
+	content: "";
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(250,254,209,1) 23%, rgba(200,250,193,1) 30%, rgba(220,179,219,1) 37%, rgba(254,82,183,1) 43%, rgba(80,254,254,1) 53%, rgba(252,70,107,1) 100%);
+	border-radius: 50%;
+	margin: 0px 2px 0px -30px;
+}
+.types-ol:hover::before {
+	content: "";
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	background: rgb(255, 0, 0);
+	border-radius: 50%;
+	margin: 0px 2px 0px -30px;
+}
+.types-a {
+	color: rgb(21, 255, 0);
+}
+.types-a:hover {
+	text-decoration: underline;
+	color: rgb(255, 0, 0);
+}
+.types-a:active::before{
+	content: "";
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	background: rgb(0, 255, 13);
+	border-radius: 50%;
+	margin: 0px 10px 0px -30px;
+}
+.types-a:visited {
+	color: rgb(160, 133, 255);
+}
+
+.img-types-ol {
+	max-width: 660px;
+	margin: 0px 0px 60px 140px;
+}
+.img-types-ol:hover img {
+	visibility: hidden;
+}
+
+.types-last {
+	color: rgb(216, 12, 12);
+	border-bottom: 10px solid rgb(122, 124, 14);
+	text-transform: uppercase;
+	line-height: 2;
+	letter-spacing: 5px;
+}
+.types-last:hover {
+	background: rgba(140, 233, 19, 0.089);
+}
+.types-last::first-line {
+	color: rgb(30, 92, 92);
+}
+.types-last:hover::first-line {
+	color: rgb(4, 255, 255);
+}
+.types-last::after {
+	content: "";
+	width: 45px;
+	height: 45px;
+	display: inline-block;
+	background: url('../img/galka.png') 0 3px/45px no-repeat;
+	margin: 0px 0px -10px 0px;
+}
+.types-last:hover::after {
+	content: "";
+	width: 45px;
+	height: 45px;
+	display: inline-block;
+	background: url('../img/logo.png') 0 3px/45px no-repeat;
+	margin: 0px 0px -10px 0px;
+}
+
+
+/* Кнопка */
+.figma {
+	max-width: 285px;
+	margin: 0px auto 40px;
+}
+#link-figma {
+	display: inline-block;
+	background-color: rgb(253, 207, 0);
+	border-radius: 20px;
+	box-shadow: 10px 15px 0 rgb(115, 115, 146);
+	font-size: 70px;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	padding: 15px 20px;
+}
+#link-figma:hover {
+	color: rgb(207, 17, 17);
+	margin: 1px 0px 0px 1px;
+	box-shadow: 9px 14px 0 rgb(115, 115, 146);
+}
+#link-figma:active {
+	color: rgb(248, 0, 248);
+	margin: 14px 0px 0px 9px;
+	background-color: rgb(253, 207, 0);
+	box-shadow: inset 0 0 17px #000;
+}
+
+.on-top {
+	max-width: 302px;
+	margin: 0px auto 80px;
+}
+.link-on-top {
+	display: inline-block;
+	color: rgb(168, 35, 35);
+	font-size: 60px;
+	background: rgb(250, 213, 48);
+	border-radius: 20px;
+	box-shadow: 2px 10px 4px rgb(15, 94, 8);
+	padding: 14px 40px;
+}
+.link-on-top:hover {
+	color: rgb(116, 122, 86);
+	background: rgb(142, 245, 223);
+	box-shadow: 1.5px 9px 4px rgb(15, 94, 8);
+	margin: 1px 0px 0px 0.5px;
+}
+.link-on-top:active {
+	color: rgb(255, 0, 0);
+	box-shadow: 0 0 4px rgb(15, 94, 8);
+	margin: 9px 0px 0px 2px;
+}
+
+.footer {
+	background-color: rgb(13, 36, 36);
+}
+.footer ul {
+	color: rgb(163, 24, 24);
+	line-height: 1.2;
+	margin: 0px 0px 0px 40px;
+}
+.li-footer {
+	padding: 5px 0px 5px 20px;
+}
+.li-footer::before {
+	content: "";
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-color: aqua;
+	border-radius: 50%;
+	margin: 0px 10px 0px -20px;
+}
